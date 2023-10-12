@@ -3,6 +3,7 @@
 // @name:ja-JP  バックオフィスクイック検索
 // @namespace   capsule-co.jp
 // @match       https://backoffice.sps-system.com/*
+// @match       https://*@backoffice.sps-system.com/*
 // @require     https://cdn.jsdelivr.net/npm/flatpickr@4.6.13/dist/flatpickr.min.js
 // @require     https://cdn.jsdelivr.net/npm/flatpickr@4.6.13/dist/l10n/ja.js
 // @resource    flatpickr_css https://cdn.jsdelivr.net/npm/flatpickr@4.6.13/dist/flatpickr.min.css
