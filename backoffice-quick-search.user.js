@@ -11,7 +11,7 @@
 // @grant       GM_setValue
 // @grant       GM_getResourceText
 // @grant       GM_addStyle
-// @version     1.0
+// @version     1.0.1
 // @author      tako2487
 // @description 2023/10/11 0:19:27
 // ==/UserScript==
