@@ -153,9 +153,10 @@
         pickr.redraw();
 
         quickSearchBtn.addEventListener("click", e => {
+            const trimmedQuickBillNo = quickBillNo.value.replace(/[\s　-]/g, "");
             let type = null;
             for (const typeName in billNoTypes) {
-                if (quickBillNo.value.length === billNoTypes[typeName].length) {
+                if (trimmedQuickBillNo.length === billNoTypes[typeName].length) {
                     type = billNoTypes[typeName];
                     break;
                 }
@@ -165,7 +166,7 @@
 
             if (type) {
                 billForm.querySelector("[name=settlementWay]").value = type.settlementWay;
-                billForm.querySelector(`[name=${type.inputName}]`).value = quickBillNo.value.replace(/[\s　-]/g);
+                billForm.querySelector(`[name=${type.inputName}]`).value = trimmedQuickBillNo;
                 $("#kensaku").click();
             }
         });
